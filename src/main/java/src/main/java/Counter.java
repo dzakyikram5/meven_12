@@ -28,13 +28,13 @@ public class Counter {
 		count-=i;
 	}
 	
-	public void multiplyBy(int i){
+	public void Double(int i){
 		count = count * i;
 	}
 	
 	public void triple(){
 		int i = 3;
-		multiplyBy(i);
+		Double(i);
 	}
 
 	public void powerBy(int i){
