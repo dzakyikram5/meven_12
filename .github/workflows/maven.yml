@@ -25,5 +25,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Build and analyze
-      env: 
+      env: GITHUB_TOKEN:${(secrets.GITHUB_TOKEN)}
+            TUGAS12: ${(secrets.TUGAS12)}
       run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=dzakyikram5-1 -Dsonar.projectKey=dzakyikram5_maven_week12
